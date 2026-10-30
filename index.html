@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha IA</title>
+    <script type="module" src="response.js" defer></script>
+    <script src="front.js" defer></script>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<style>
+.agente{
+    
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    padding-top: 40px;
+    flex-direction: column;
+    
+}
+
+#resposta{
+    margin-top: 8px;
+    resize: none;
+   font-family: serif;
+   font-size: 18px;
+   width: 800px;
+   height: 400px;
+
+
+    
+}
+
+#pergunta{
+    width: 100%;
+    max-width: 500px;
+    height: 40px;
+    height: 100%;
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:medium;
+}
+
+#enviar{
+font-family: monospace;
+background-color:darkorchid;
+}
+
+
+.resposta-carregando{
+  border-color: #0d6efd;
+  box-shadow: 0 0 4px rgba(13, 110, 253, 0.25); 
+  transition: all 0.2s ease-in-out; 
+}
+
+
+
+
+
+
+</style>
+
+<body>
+
+<div class="agente">
+
+    <label for="pergunta"></label>
+     <textarea type="text" id="pergunta" name="pergunta" placeholder="Digite sua pergunta"> </textarea>
+
+    <button id="enviar"><strong> ENVIAR PERGUNTA  </strong> </button>
+
+    <textarea id="resposta" name="resposta" readonly> </textarea> 
+    
+    </div>
+
+
+</body>
+</html>
